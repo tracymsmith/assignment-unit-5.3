@@ -29,8 +29,11 @@ function showCollection(collection) {
       ${album.yearPublished}`);
   }
 }
-let myCollection2 = [{title: 'Thriller', artist: 'Michael Jackson', yearPublished: 1982}];
 showCollection(myCollection);
+
+let myCollection2 = [
+  {title: 'Thriller', artist: 'Michael Jackson', yearPublished: 1982},
+  {title: 'Bad', artist: 'Michael Jackson', yearPublished: 1987}];
 showCollection(myCollection2);
 
 function findByArtist(collection, artist) {
@@ -45,9 +48,11 @@ function findByArtist(collection, artist) {
 let adeleAlbums = findByArtist(myCollection, 'Adele');
 console.log('Adele Albums:', adeleAlbums);
 
-let brunoMarsAlbums = findByArtist(myCollection, 'brunoMars');
+let brunoMarsAlbums = findByArtist(myCollection, 'Bruno Mars');
 console.log('Bruno Mars Albums:', brunoMarsAlbums);
 
+let michaelJacksonAlbums = findByArtist(myCollection2, 'Michael Jackson');
+console.log('Michael Jackson Albums:', michaelJacksonAlbums);
 
 
 
