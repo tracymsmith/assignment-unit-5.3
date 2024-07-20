@@ -22,6 +22,15 @@ console.log('Add to my Collection;', addToCollection(myCollection, 'Willow Creek
 console.log('Add to my Collection;', addToCollection(myCollection, 'Songs in A Minor', 'Alicia Keys', 2011));
 console.log('My Collection:', myCollection);
 
+function showCollection(collection) {
+  for (let album of collection) {
+    console.log(`${album.title}
+      ${album.artist},
+      ${album.yearPublished}`);
+  }
+}
+let collection = [];
+console.log('Showing My Collection:', showCollection(myCollection));
 
 
 
