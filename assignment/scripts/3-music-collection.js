@@ -29,9 +29,19 @@ function showCollection(collection) {
       ${album.yearPublished}`);
   }
 }
-let collection = [];
-console.log('Showing My Collection:', showCollection(myCollection));
+let myCollection2 = [{title: 'Thriller', artist: 'Michael Jackson', yearPublished: 1982}];
+showCollection(myCollection);
+showCollection(myCollection2);
 
+function findByArtist(collection, artist) {
+  let matchingAlbums = [];
+  for (let album of collection) {
+    if (album.artist === artist) {
+      matchingAlbums.push(album);
+    }
+  }
+  return matchingAlbums;
+}
 
 
 
