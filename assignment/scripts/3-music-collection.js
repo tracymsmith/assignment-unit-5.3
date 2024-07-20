@@ -14,6 +14,14 @@ function addToCollection(collection, title, artist, yearPublished) {
 }
 console.log('My collection:', myCollection);
 
+console.log('Add to my Collection;', addToCollection(myCollection, 'Songs in the Key of Life', 'Stevie Wonder', 1976));
+console.log('Add to my Collection;', addToCollection(myCollection, 'I Am', 'Earth, Wind & Fire', 1979));
+console.log('Add to my Collection;', addToCollection(myCollection, 'Carpenters', 'Carpenters', 1971));
+console.log('Add to my Collection;', addToCollection(myCollection, '21', 'Adele', 2011));
+console.log('Add to my Collection;', addToCollection(myCollection, 'Willow Creek', 'Marian McPartland', 2006));
+console.log('Add to my Collection;', addToCollection(myCollection, 'Songs in A Minor', 'Alicia Keys', 2011));
+console.log('My Collection:', myCollection);
+
 
 
 
