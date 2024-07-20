@@ -3,6 +3,16 @@ console.log('***** Music Collection *****')
 let myCollection = [];
 console.log('My Collection:', myCollection);
 
+function addToCollection(collection, title, artist, yearPublished) {
+  const album = {
+    title: title,
+    artist: artist,
+    yearPublished: yearPublished
+  };
+  collection.push(album);
+  return album;
+}
+console.log('My collection:', myCollection);
 
 
 
