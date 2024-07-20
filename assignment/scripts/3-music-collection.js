@@ -42,7 +42,11 @@ function findByArtist(collection, artist) {
   }
   return matchingAlbums;
 }
+let adeleAlbums = findByArtist(myCollection, 'Adele');
+console.log('Adele Albums:', adeleAlbums);
 
+let brunoMarsAlbums = findByArtist(myCollection, 'brunoMars');
+console.log('Bruno Mars Albums:', brunoMarsAlbums);
 
 
 
